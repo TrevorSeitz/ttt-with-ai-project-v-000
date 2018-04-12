@@ -60,6 +60,7 @@ def won?
           @board.cells[win_combination[0]] == @board.cells[win_combination[1]] &&
           @board.cells[win_combination[1]] == @board.cells[win_combination[2]] &&
           @board.taken?(win_combination[0]+1)}
+          binding.pry
   end
 
   def draw?
